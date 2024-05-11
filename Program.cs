@@ -10,7 +10,7 @@ namespace YNSRC
         {
             Console.WriteLine("Main Program: Started");
 
-            string dllPath = Environment.CurrentDirectory + Path.AltDirectorySeparatorChar + "library.dll";
+            string dllPath = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "library.dll";
 
             Assembly assembly = Assembly.Load(File.ReadAllBytes(dllPath));
 
